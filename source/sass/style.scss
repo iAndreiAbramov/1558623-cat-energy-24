@@ -1,2 +1,9 @@
 //@import "blocks/visually-hidden";
 @import "blocks/container";
+@import "common";
+@import "fonts";
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
