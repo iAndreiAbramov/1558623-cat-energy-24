@@ -1,0 +1,32 @@
+@import "../variables";
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  list-style: none;
+
+  background-color: $bgc-page-light;
+}
+
+.nav-list__item {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  font-family: $ff-header;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: $fc-header-dark;
+
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-list__link {
+  text-decoration: none;
+}
