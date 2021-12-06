@@ -1,0 +1,14 @@
+@import "../variables";
+
+.page {
+  height: 100%;
+  font-family: $ff-header;
+  font-weight: $fw-normal;
+  font-size: $fz-basic;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $bgc-page-light;
+}

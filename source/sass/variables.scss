@@ -1,0 +1,31 @@
+//Font families
+$ff-header: "Oswald", "Arial", sans-serif;
+$ff-content: "Arial", sans-serif;
+
+//Font sizes
+$fz-basic: 14px;
+
+//Font weights
+$fw-normal: 400;
+$fw-medium: 500;
+
+//Background colors
+$bgc-page-light: #ffffff;
+$bgc-page-grey: #f2f2f2;
+$bgc-button-icon: #68b738;
+$bgc-mask: rgba(104, 183, 56, 0.85);
+
+//Font colors
+$fc-header-dark: #000000;
+$fc-header-dark-hover: rgba($fc-header-dark, 0.6);
+$fc-header-dark-menu-down: rgba($fc-header-dark, 0.3);
+$fc-header-dark-checkbox-disabled: rgba($fc-header-dark, 0.3);
+
+$fc-content-dark: #444444;
+
+$fc-grey: #f2f2f2;
+$fc-grey-button-pressed: rgba($fc-grey, 0.3);
+
+$fc-light: #ffffff;
+$fc-light-hover: rgba($fc-light, 0.6);
+$fc-light-menu-down: rgba($fc-light, 0.3);
