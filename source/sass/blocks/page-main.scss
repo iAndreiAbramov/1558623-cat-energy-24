@@ -5,7 +5,9 @@
 }
 
 .page-main__section {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
+
+.page-main__section--explanation {
+  margin-bottom: 49px;
 }
