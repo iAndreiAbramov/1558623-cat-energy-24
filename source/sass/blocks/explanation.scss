@@ -69,31 +69,31 @@
     height: 60px;
 
     content: "";
-    background-position: center/center;
+    background-position: center center;
     background-size: cover;
   }
 }
 
 .explanation__description--leaf {
   &::before {
-    background-image: url("../img/background/icon-leaf.svg");
+    background-image: url("../img/icons/icon-leaf.svg");
   }
 }
 
 .explanation__description--glass {
   &::before {
-    background-image: url("../img/background/icon-glass.svg");
+    background-image: url("../img/icons/icon-glass.svg");
   }
 }
 
 .explanation__description--cutlery {
   &::before {
-    background-image: url("../img/background/icon-cutlery.svg");
+    background-image: url("../img/icons/icon-cutlery.svg");
   }
 }
 
 .explanation__description--clock {
   &::before {
-    background-image: url("../img/background/icon-clock.svg");
+    background-image: url("../img/icons/icon-clock.svg");
   }
 }

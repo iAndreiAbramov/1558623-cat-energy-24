@@ -46,7 +46,7 @@
       <div class="promo__img-wrapper">
         <img src="img/content/promo-can-mobile-1.png" alt="Упаковка с кормом" width="280" height="270">
       </div>
-      <div class="container">
+      <div class="promo__choose container">
         <a class="promo__link" href="form.html">подобрать программу</a>
       </div>
     </section>
@@ -132,39 +132,37 @@
       </div>
     </section>
 
-    <section class="page-main__section map">
+    <section class="page-main__section page-main__section--no-margin map">
       <h2 class="visually-hidden">мы на карте</h2>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e81ce561876e07377615a9d5bdd031a5ff2d634367a6a66c65dcc68c7469b3&amp;source=constructor"
-        height="362"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e81ce561876e07377615a9d5bdd031a5ff2d634367a6a66c65dcc68c7469b3&amp;source=constructor" height="362"></iframe>
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper container">
-      <a class="page-footer__logo container">
-        <img src="img/icons/footer-logo-text.svg" alt="Текстовый логотип Cat Energy" width="128" height="24">
-      </a>
-      <!--    todo: горизонтальная линия-->
-      <ul class="page-footer__socials-list container">
-        <li class="page-footer__socials-item page-footer__socials-item--vk">
-          <a href="https://vk.com">
+  <footer class="page-footer footer">
+    <div class="footer__wrapper container">
+      <div class="page-footer__item footer-logo">
+        <a class="footer__logo-link">
+          <img src="img/icons/footer-logo-text.svg" alt="Текстовый логотип Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <ul class="page-footer__item footer-socials-list">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--vk" href="https://vk.com">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="page-footer__socials-item page-footer__socials-item--instagram">
-          <a href="https://www.instagram.com">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--instagram" href="https://www.instagram.com">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
-        <li class="page-footer__socials-item page-footer__socials-item--facebook">
-          <a href="https://www.facebook.com">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--facebook" href="https://www.facebook.com">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
       </ul>
-      <!--    todo: горизонтальная линия-->
-      <div class="page-footer__academy container">
+      <div class="page-footer__item footer-academy">
         <span class="page-footer__text">HTML Academy</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__academy-link">
           <img src="img/icons/footer-logo-academy.svg" alt="Логотип HTML-Академии">
@@ -172,6 +170,7 @@
       </div>
     </div>
   </footer>
+
   <script src="js/app.js"></script>
 </body>
 </html>
