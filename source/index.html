@@ -9,42 +9,46 @@
 </head>
 <body class="page__body">
   <header class="page-header container">
-        <a class="page-header__logo">
-          <img src="img/icons/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
-        </a>
-        <a class="page-header__logo-text">
-          <img class="page-header__logo-image" src="img/icons/header-logo-text.svg" alt="текстовый логотип cat energy"
-            width="101" height="18">
-        </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="main-nav__dash"></span>
-          <span class="main-nav__dash"></span>
-          <span class="main-nav__dash"></span>
-        </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a href="/" class="nav-list__link">главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="catalog.html" class="nav-list__link">каталог продукции</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="form.html" class="nav-list__link">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <a class="page-header__logo">
+      <img src="img/icons/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
+    </a>
+    <a class="page-header__logo-text">
+      <img class="page-header__logo-image" src="img/icons/header-logo-text.svg" alt="текстовый логотип cat energy"
+        width="101" height="18">
+    </a>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__dash"></span>
+        <span class="main-nav__dash"></span>
+        <span class="main-nav__dash"></span>
+      </button>
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item">
+          <a href="/" class="nav-list__link">главная</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="catalog.html" class="nav-list__link">каталог продукции</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="form.html" class="nav-list__link">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
-    <section class="page-main__section promo container">
-      <h1 class="promo__title title">Функциональное питание для котов</h1>
-      <span class="promo__action-call">Занялся собой? Займись котом!</span>
-      <div class="promo__img-wrapper">
-        <img src="img/content/index-can-mobile-1.jpg" alt="Упаковка с кормом" width="280" height="270">
+    <section class="page-main__section promo">
+      <div class="promo__text-wrapper">
+        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <span class="promo__action-call">занялся собой? займись котом!</span>
       </div>
-      <a class="promo__link" href="form.html">подобрать программу</a>
+      <div class="promo__img-wrapper">
+        <img src="img/content/promo-can-mobile-1.png" alt="Упаковка с кормом" width="280" height="270">
+      </div>
+      <div class="container">
+        <a class="promo__link" href="form.html">подобрать программу</a>
+      </div>
     </section>
 
     <section class="page-main__section motivation container">
@@ -53,19 +57,15 @@
         <h3 class="motivation__title">похудение</h3>
         <p class="motivation__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <!--        todo: линия с помощью ::after-->
         <!--        todo: реализовать переход по якорю, а не только на страницу-->
-        <a href="catalog.html">каталог slim</a>
-        <!--        todo: горизонтальная линия-->
+        <a class="motivation__link" href="catalog.html">каталог slim</a>
       </article>
       <article class="motivation__item motivation__item--lynx">
         <h3 class="motivation__title">Набор массы</h3>
         <p class="motivation__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
-        <!--        todo: горизонтальная линия-->
         <!--        todo: реализовать переход по якорю, а не только на страницу-->
-        <a href="catalog.html">каталог pro</a>
-        <!--        todo: стрелка с помощью ::after-->
+        <a class="motivation__link" href="catalog.html">каталог pro</a>
       </article>
     </section>
 

@@ -1,0 +1,11 @@
+@import "../variables";
+
+.page-main {
+  min-width: 320px;
+}
+
+.page-main__section {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

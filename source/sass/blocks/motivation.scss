@@ -1,0 +1,94 @@
+@import "../variables";
+
+.motivation {
+
+}
+
+.motivation__item {
+  position: relative;
+
+  padding: 22px 20px;
+
+  background-color: $bgc-page-grey;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.motivation__item--cat {
+  &::before {
+    position: absolute;
+
+    display: block;
+    width: 50px;
+    height: 53px;
+
+    content: "";
+    background-image: url("../img/background/cat_back.svg");
+  }
+}
+
+.motivation__item--lynx {
+  &::before {
+    position: absolute;
+
+    display: block;
+    width: 67px;
+    height: 50px;
+
+    content: "";
+    background-image: url("../img/background/lynx_back.svg");
+  }
+}
+
+.motivation__title {
+  margin: 0 0 0 81px;
+
+  font-family: $ff-title;
+  font-weight: $fw-medium;
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+}
+
+.motivation__description {
+  margin: 29px 0 0;
+  padding: 0 0 23px 0;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  font-size: 14px;
+  line-height: 1.29;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.motivation__link {
+  position: relative;
+
+  display: inline-block;
+  margin-top: 15px;
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-header-dark;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: -45px;
+
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+
+    content: "";
+    background-image: url("../img/background/arrow.svg");
+    background-size: cover;
+    background-position: center/center;
+  }
+}
