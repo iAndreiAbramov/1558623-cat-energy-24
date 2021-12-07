@@ -1,0 +1,40 @@
+@import "../variables";
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  flex-basis: 125px;
+
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__address {
+  flex-basis: 125px;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  color: $fc-content-dark;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.contacts__street {
+  display: block;
+}
+
+.contacts__city {
+  display: block;
+}
