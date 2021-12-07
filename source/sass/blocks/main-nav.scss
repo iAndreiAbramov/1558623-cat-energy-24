@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: none;
   padding: 0;
-  box-sizing: border-box;
+
+  background: none;
   border: none;
 }
 
@@ -16,6 +16,7 @@
   display: block;
   width: 24px;
   height: 2px;
+
   background-color: #000000;
   transition: all 0.3s linear;
 
@@ -25,13 +26,15 @@
 }
 
 .main-nav__dash--rotated-plus {
-  margin-bottom: 0;
   transform: translateY(200%) rotate(225deg);
+
+  margin-bottom: 0;
 }
 
 .main-nav__dash--rotated-minus {
-  margin-bottom: 0;
   transform: translateY(-200%) rotate(-225deg);
+
+  margin-bottom: 0;
 }
 
 .main-nav__list {
@@ -39,6 +42,7 @@
   bottom: 0;
   left: 0;
   transform: translateY(100%);
+
   display: none;
   width: 100%;
 }

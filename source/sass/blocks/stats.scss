@@ -1,0 +1,78 @@
+@import "../variables";
+
+.stats {
+  display: grid;
+  gap: 30px;
+}
+
+.stats__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.stats__row--text {
+  grid-template-columns: auto auto;
+  gap: 4px;
+}
+
+.stats__visualisation {
+  position: relative;
+
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.stats__text {
+  display: block;
+}
+
+.stats__text--big {
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-header-dark;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats__text--small {
+  position: absolute;
+  bottom: -15px;
+
+  width: 60%;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  color: $fc-content-dark;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+
+  background-color: $bgc-page-grey;
+}
+
+.stats__text--middle {
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-header-dark;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats__text--left {
+  text-align: right;
+}
+
+.stats__text--right {
+  text-align: left;
+}

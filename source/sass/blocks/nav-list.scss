@@ -1,6 +1,8 @@
 @import "../variables";
 
 .nav-list {
+  z-index: 3;
+
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -8,7 +10,6 @@
   list-style: none;
 
   background-color: $bgc-page-light;
-  z-index: 3;
 }
 
 .nav-list__item {
