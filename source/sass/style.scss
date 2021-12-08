@@ -1,6 +1,8 @@
 @import "fonts";
 @import "variables";
 @import "common";
+@import "blocks/title";
+@import "blocks/button";
 @import "blocks/container";
 @import "blocks/visually-hidden";
 @import "blocks/page";
@@ -9,7 +11,6 @@
 @import "blocks/nav-list";
 @import "blocks/page-main";
 @import "blocks/promo";
-@import "blocks/title";
 @import "blocks/motivation";
 @import "blocks/explanation";
 @import "blocks/example";
@@ -18,3 +19,9 @@
 @import "blocks/contacts";
 @import "blocks/map";
 @import "blocks/page-footer";
+@import "blocks/catalog";
+@import "blocks/good";
+@import "blocks/more-goods";
+@import "blocks/extra-goods";
+@import "blocks/extra-good";
+@import "blocks/gift";

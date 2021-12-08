@@ -6,6 +6,12 @@
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
+
+  background-color: $bgc-page-light;
+}
+
+.contacts.contacts--bg-grey {
+  background-color: $bgc-page-grey;
 }
 
 .contacts__title {

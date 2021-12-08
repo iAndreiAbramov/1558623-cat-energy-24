@@ -1,0 +1,38 @@
+@import "../variables";
+
+.extra-good {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  border-top: $border-main-row;
+  border-bottom: $border-main-row;
+}
+
+.extra-good__title {
+  margin: 0;
+
+  color: #222222;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.extra-good__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  color: $fc-content-dark;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.extra-good__button {
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+}

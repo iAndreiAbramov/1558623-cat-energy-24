@@ -1,0 +1,20 @@
+@import "../variables";
+
+.button {
+  display: block;
+  padding: 0;
+
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-light;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  background-color: $bgc-button-icon;
+}
+
+.button--shadowed {
+  color: $fc-content-dark;
+  background-color: $bgc-button-shadowed;
+}

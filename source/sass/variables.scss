@@ -1,6 +1,6 @@
-//Development
-//todo: Удалить
-$dev-border: 1px solid #dddddd;
+//Borders
+$border-main-row: 1px solid #cdcdcd;
+$border-footer-row: 1px solid #d9d9d9;
 
 //Breakpoints
 $min-mobile: 320px;
@@ -22,13 +22,14 @@ $fw-medium: 500;
 $bgc-page-light: #ffffff;
 $bgc-page-grey: #f2f2f2;
 $bgc-button-icon: #68b738;
+$bgc-button-shadowed: #f2f2f2;
 $bgc-mask: rgba(104, 183, 56, 0.85);
 
 //Font colors
-$fc-header-dark: #000000;
-$fc-header-dark-hover: rgba($fc-header-dark, 0.6);
-$fc-header-dark-menu-down: rgba($fc-header-dark, 0.3);
-$fc-header-dark-checkbox-disabled: rgba($fc-header-dark, 0.3);
+$fc-title-dark: #000000;
+$fc-title-dark-hover: rgba($fc-title-dark, 0.6);
+$fc-title-dark-menu-down: rgba($fc-title-dark, 0.3);
+$fc-title-dark-checkbox-disabled: rgba($fc-title-dark, 0.3);
 
 $fc-content-dark: #444444;
 

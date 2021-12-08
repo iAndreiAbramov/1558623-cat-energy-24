@@ -1,0 +1,79 @@
+@import "../variables";
+
+.good {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 40px;
+  row-gap: 21px;
+
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.good__image-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.good__info {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+
+.good__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.good__parameters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 19px 0 0;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  color: $fc-content-dark;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.good__parameter-name {
+  grid-column: 1 / 2;
+
+  margin: 0;
+
+  text-align: left;
+}
+
+.good__parameter-value {
+  grid-column: 2 / -1;
+
+  margin: 0;
+
+  text-align: right;
+}
+
+.good__button {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
