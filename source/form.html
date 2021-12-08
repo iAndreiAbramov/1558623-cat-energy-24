@@ -39,93 +39,89 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title title container">подбор программы</h1>
-    <form class="page-main__section form container" action="#" method="post">
-      <h2 class="form__header container">заполните анкету, и мы подберем программу питания для вашего кота</h2>
+    <h1 class="page-main__title title container">Подбор программы</h1>
+    <form class="form container" action="#" method="post">
+      <h2 class="form__title title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 
-      <fieldset class="form__fieldset fieldset" name="cat-data">
+      <fieldset class="form__fieldset fieldset fieldset--cat" name="cat-data">
         <label class="fieldset__label">
-          <span class="fieldset__label-text">имя:*</span>
-          <input class="form__input" type="text" name="cat-name" placeholder="БАРСИК" required>
+          <span class="fieldset__label-text title">имя:*</span>
+          <input class="input input--field" type="text" name="cat-name" placeholder="БАРСИК" required>
         </label>
         <label class="fieldset__label">
-          <span class="fieldset__label-text">вес (кг):*</span>
-          <input class="form__input" type="number" name="cat-weight" placeholder="7" required>
+          <span class="fieldset__label-text title">вес&nbsp;(кг):*</span>
+          <input class="input input--field" type="number" name="cat-weight" placeholder="7" required>
         </label>
         <label class="fieldset__label">
-          <span class="fieldset__label-text">возраст (лет):</span>
-          <input class="form__input" type="number" name="cat-age" placeholder="7">
+          <span class="fieldset__label-text title">возраст&nbsp;(лет):</span>
+          <input class="input input--field" type="number" name="cat-age" placeholder="7">
         </label>
       </fieldset>
-      <!--      todo: горизонтальная линия-->
 
-      <fieldset class="form__fieldset fieldset" name="reason">
-        <label class="fieldset__label">
-          <input type="radio" name="reason" checked>
-          <span class="fieldset__label-text">похудение</span>
+      <fieldset class="form__fieldset fieldset fieldset--reason" name="reason">
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="radio" name="reason" checked>
+          <span class="fieldset__label-text title">похудение</span>
         </label>
-        <label class="fieldset__label">
-          <input type="radio" name="reason">
-          <span class="fieldset__label-text">набор массы</span>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="radio" name="reason">
+          <span class="fieldset__label-text title">набор массы</span>
         </label>
-        <label class="fieldset__label">
-          <input type="radio" name="reason">
-          <span class="fieldset__label-text">не знаю (нужен ваш совет)</span>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="radio" name="reason">
+          <span class="fieldset__label-text title">не знаю (нужен ваш совет)</span>
         </label>
       </fieldset>
-      <!--      todo: горизонтальная линия-->
 
-      <fieldset class="form__fieldset fieldset" name="owner-data">
-        <legend class="fieldset__title">контактные данные (владельца кота)</legend>
-        <!--        todo: декоративная линия-->
+      <fieldset class="form__fieldset form__fieldset--owner fieldset fieldset--owner" name="owner-data">
+        <legend class="fieldset__title title">Контактные данные (владельца кота)</legend>
         <label class="fieldset__label">
-          <span class="fieldset__label-text">e-mail:*</span>
-          <input class="form__input form__input--email" type="email" name="owner-email"
+          <span class="fieldset__label-text title">e-mail:*</span>
+          <input class="input input--field input--email" type="email" name="owner-email"
             placeholder="kuklachev@gmail.com" required>
-          <!--          todo: картинка-->
         </label>
         <label class="fieldset__label">
-          <span class="fieldset__label-text">Телефон:*</span>
-          <input class="form__input form__input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90"
-            required>
-          <!--          todo: картинка-->
+          <span class="fieldset__label-text title">Телефон:*</span>
+          <input class="input input--field input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset" name="comment">
-        <legend class="fieldset__title">комментарий</legend>
-        <!--        todo: декоративная линия-->
+      <fieldset class="form__fieldset form__fieldset--comment fieldset fieldset--comment" name="comment">
+        <legend class="fieldset__title title">Комментарий</legend>
         <label class="fieldset__label">
-          <textarea name="owner-comment" placeholder="расскажите обо всех повадках кота"></textarea>
+          <textarea class="textarea" name="owner-comment" placeholder="расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset" name="extra">
-        <legend class="fieldset__title">дополнительно</legend>
-        <label class="fieldset__label">
-          <input type="checkbox" name="sweetener" checked>
-          <span class="fieldset__label-text">сахарозаменитель</span>
+      <fieldset class="form__fieldset form__fieldset--extra fieldset fieldset--extra" name="extra">
+        <legend class="fieldset__title title">Дополнительно</legend>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="checkbox" name="sweetener" checked>
+          <span class="fieldset__label-text title">сахарозаменитель</span>
         </label>
-        <label class="fieldset__label">
-          <input type="checkbox" name="pure-water">
-          <span class="fieldset__label-text">питьевая вода</span>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="checkbox" name="pure-water">
+          <span class="fieldset__label-text title">питьевая вода</span>
         </label>
-        <label class="fieldset__label">
-          <input type="checkbox" name="milk">
-          <span class="fieldset__label-text">молоко</span>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="checkbox" name="milk">
+          <span class="fieldset__label-text title">молоко</span>
         </label>
-        <label class="fieldset__label">
-          <input type="checkbox" name="vitamins">
-          <span class="fieldset__label-text">витамины</span>
+        <label class="fieldset__label fieldset__label--left">
+          <input class="input input--checker" type="checkbox" name="vitamins">
+          <span class="fieldset__label-text title">витамины</span>
         </label>
       </fieldset>
-      <button class="form__submit-button button" type="submit">отправить заявку</button>
+      <button class="form__submit-button button" type="submit">Отправить заявку</button>
       <span class="form__clarification">* — Обязательные поля</span>
     </form>
 
-    <section class="page-main__section contacts container">
-      <h2 class="contacts__title">приглашаем к сотрудничеству дилеров</h2>
-      <span class="contacts__address">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</span>
+    <section class="page-main__section page-main__section--no-margin contacts contacts--bg-grey container">
+      <h2 class="contacts__title title">приглашаем к сотрудничеству дилеров!</h2>
+      <div class="contacts__address">
+        <span class="contacts__street">ул. Большая Конюшенная, д.&nbsp19/8</span>
+        <span class="contacts__city">Санкт-Петербург</span>
+      </div>
     </section>
 
     <section class="page-main__section map">

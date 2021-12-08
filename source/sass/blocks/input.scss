@@ -1,0 +1,36 @@
+@import "../variables";
+
+.input {
+  border: $border-input;
+}
+
+.input.input--field {
+  flex-grow: 1;
+  margin-left: 13px;
+  padding: 13px 15px;
+
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-content-dark;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.input.input--checker {
+  margin-right: 16px;
+}
+
+.input--email {
+  background-image: url("../img/icons/icon_email.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 14px;
+  background-position: top 50% right 15px;
+}
+
+.input--phone {
+  background-image: url("../img/icons/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: top 50% right 13px;
+}
