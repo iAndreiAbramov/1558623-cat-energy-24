@@ -1,0 +1,20 @@
+@import "../variables";
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle__hint {
+  font-family: $ff-title;
+  font-weight: $fw-normal;
+  color: $fc-title-dark;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.toggle__input {
+  margin: 0 15px 0;
+}

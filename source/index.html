@@ -8,92 +8,92 @@
   <title>HTML Academy: Кэт Энерджи</title>
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="container">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/icons/logo-mobile.svg" alt="Логотип Cat Energy" width="34"
-            height="38">
-        </a>
-        <a class="page-header__logo-text">
-          <img class="page-header__logo-image" src="img/icons/header-logo-text.svg" alt="Текстовый логотип Cat Energy"
-            width="101" height="18">
-        </a>
-      </div>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a href="/" class="nav-list__link">главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="catalog.html" class="nav-list__link">каталог продукции</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="form.html" class="nav-list__link">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <header class="page-header container">
+    <a class="page-header__logo">
+      <img src="img/icons/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
+    </a>
+    <a class="page-header__logo-text">
+      <img class="page-header__logo-image" src="img/icons/header-logo-text.svg" alt="текстовый логотип cat energy"
+        width="101" height="18">
+    </a>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__dash"></span>
+        <span class="main-nav__dash"></span>
+        <span class="main-nav__dash"></span>
+      </button>
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item">
+          <a href="/" class="nav-list__link">главная</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="catalog.html" class="nav-list__link">каталог продукции</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="form.html" class="nav-list__link">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
-    <section class="page-main__section promo container">
-      <h1 class="promo__title title">Функциональное питание для котов</h1>
-      <span class="promo__action-call">Занялся собой? Займись котом!</span>
-      <div class="promo__img-wrapper">
-        <img src="img/content/index-can-mobile-1.jpg" alt="Упаковка с кормом" width="280" height="270">
+    <section class="page-main__section promo">
+      <div class="promo__text-wrapper">
+        <h1 class="promo__title title container">Функциональное питание для котов</h1>
+        <span class="promo__action-call">занялся собой? займись котом!</span>
       </div>
-      <a class="promo__link" href="form.html">подобрать программу</a>
+      <div class="promo__img-wrapper">
+        <img src="img/content/promo-can-mobile-1.png" alt="Упаковка с кормом" width="280" height="270">
+      </div>
+      <div class="promo__choose container">
+        <a class="promo__link" href="form.html">подобрать программу</a>
+      </div>
     </section>
 
     <section class="page-main__section motivation container">
       <h2 class="visually-hidden">Причины воспользоваться нашей продукцией</h2>
-      <article class="motivation__item motivation__item--cat">
-        <h3 class="motivation__title">похудение</h3>
+      <article class="motivation__item">
+        <h3 class="motivation__title motivation__title--cat">похудение</h3>
         <p class="motivation__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <!--        todo: линия с помощью ::after-->
         <!--        todo: реализовать переход по якорю, а не только на страницу-->
-        <a href="catalog.html">каталог slim</a>
-        <!--        todo: горизонтальная линия-->
+        <a class="motivation__link" href="catalog.html">каталог slim</a>
       </article>
-      <article class="motivation__item motivation__item--lynx">
-        <h3 class="motivation__title">Набор массы</h3>
+
+      <article class="motivation__item">
+        <h3 class="motivation__title motivation__title--lynx">Набор массы</h3>
         <p class="motivation__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
-        <!--        todo: горизонтальная линия-->
         <!--        todo: реализовать переход по якорю, а не только на страницу-->
-        <a href="catalog.html">каталог pro</a>
-        <!--        todo: стрелка с помощью ::after-->
+        <a class="motivation__link" href="catalog.html">каталог pro</a>
       </article>
     </section>
 
-    <section class="page-main__section explanation container">
-      <h2 class="subtitle explanation__title">Как это работает</h2>
+    <section class="page-main__section page-main__section--explanation explanation container">
+      <h2 class="explanation__title title">Как это работает</h2>
       <ul class="explanation__list">
-        <li class="explanation__item explanation__item--leaf explanation__item--one">
-          <span class="explanation-description">Функциональное питание содержит только полезные питательные
+        <li class="explanation__item explanation__item--one">
+          <span class="explanation__description explanation__description--leaf">Функциональное питание содержит только полезные питательные
             вещества.</span>
         </li>
-        <li class="explanation__item explanation__item--glass explanation__item--two">
-          <span class="explanation-description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+        <li class="explanation__item explanation__item--two">
+          <span class="explanation__description explanation__description--glass">Выпускается в виде порошка, который нужно лишь залить кипятком и
             готово.</span>
         </li>
-        <li class="explanation__item explanation__item--cutlery explanation__item--three">
-          <span class="explanation-description">Замените один-два приема обычной еды на наше функциональное
+        <li class="explanation__item explanation__item--three">
+          <span class="explanation__description explanation__description--cutlery">Замените один-два приема обычной еды на наше функциональное
             питание.</span>
         </li>
-        <li class="explanation__item explanation__item--clock explanation__item--four">
-          <p class="explanation-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <li class="explanation__item explanation__item--four">
+          <p class="explanation__description explanation__description--clock">Уже через месяц наслаждайтесь изменениями
+            к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
 
-    <section class="page-main__section example container">
-      <h2 class="example__title subtitle">Живой пример</h2>
+    <section class="page-main__section page-main__section--no-margin example container">
+      <h2 class="example__title title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
         часов в день.</p>
@@ -108,12 +108,13 @@
             <span class="stats__text stats__text--small">затрачено времени</span>
           </div>
         </div>
-        <div class="stats__row">
-          <span class="stats__text stats__text--middle">Затраты на питание: 15 000 руб.</span>
+        <div class="stats__row stats__row--text">
+          <span class="stats__text stats__text--middle stats__text--left">Затраты на питание: </span>
+          <span class="stats__text stats__text--middle stats__text--right">15 000 руб.</span>
         </div>
       </div>
       <div class="example__image-wrapper">
-        <img src="img/content/before-mobile.jpg" alt="Кот до перехода наше питание">
+        <img src="img/content/before-mobile.png" alt="Кот до перехода наше питание">
       </div>
       <label class="example__toggle toggle">
         <span class="toggle__hint">было</span>
@@ -123,44 +124,45 @@
       </label>
     </section>
 
-    <section class="page-main__section contacts container">
-      <h2 class="contacts__title">приглашаем к сотрудничеству дилеров</h2>
-      <span class="contacts__address">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</span>
+    <section class="page-main__section page-main__section--no-margin contacts container">
+      <h2 class="contacts__title title">приглашаем к сотрудничеству дилеров!</h2>
+      <div class="contacts__address">
+        <span class="contacts__street">ул. Большая Конюшенная, д.&nbsp19/8</span>
+        <span class="contacts__city">Санкт-Петербург</span>
+      </div>
     </section>
 
-    <section class="page-main__section map">
+    <section class="page-main__section page-main__section--no-margin map">
       <h2 class="visually-hidden">мы на карте</h2>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e81ce561876e07377615a9d5bdd031a5ff2d634367a6a66c65dcc68c7469b3&amp;source=constructor"
-        height="362"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e81ce561876e07377615a9d5bdd031a5ff2d634367a6a66c65dcc68c7469b3&amp;source=constructor" height="362"></iframe>
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper container">
-      <a class="page-footer__logo container">
-        <img src="img/icons/footer-logo-text.svg" alt="Текстовый логотип Cat Energy" width="128" height="24">
-      </a>
-      <!--    todo: горизонтальная линия-->
-      <ul class="page-footer__socials-list container">
-        <li class="page-footer__socials-item page-footer__socials-item--vk">
-          <a href="https://vk.com">
+  <footer class="page-footer footer">
+    <div class="footer__wrapper container">
+      <div class="page-footer__item footer-logo">
+        <a class="footer__logo-link">
+          <img src="img/icons/footer-logo-text.svg" alt="Текстовый логотип Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <ul class="page-footer__item footer-socials-list">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--vk" href="https://vk.com">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="page-footer__socials-item page-footer__socials-item--instagram">
-          <a href="https://www.instagram.com">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--instagram" href="https://www.instagram.com">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
-        <li class="page-footer__socials-item page-footer__socials-item--facebook">
-          <a href="https://www.facebook.com">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--facebook" href="https://www.facebook.com">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
       </ul>
-      <!--    todo: горизонтальная линия-->
-      <div class="page-footer__academy container">
+      <div class="page-footer__item footer-academy">
         <span class="page-footer__text">HTML Academy</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__academy-link">
           <img src="img/icons/footer-logo-academy.svg" alt="Логотип HTML-Академии">
@@ -168,5 +170,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

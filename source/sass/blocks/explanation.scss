@@ -1,0 +1,99 @@
+@import "../variables";
+
+.explanation {
+  display: block;
+}
+
+.explanation__title {
+  margin: 0;
+  padding: 0;
+
+  color: $fc-title-dark;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.explanation__list {
+  display: grid;
+  gap: 20px;
+
+  margin: 40px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.explanation__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.explanation__item--one {
+  background: none;
+}
+
+.explanation__item--two {
+  background: none;
+}
+
+.explanation__item--three {
+  background: none;
+}
+
+.explanation__item--four {
+  background: none;
+}
+
+.explanation__description {
+  grid-column: 2 / 3;
+
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: $fc-content-dark;
+
+  &::before {
+    grid-column: 1 / 2;
+
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+
+    content: "";
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.explanation__description--leaf {
+  &::before {
+    background-image: url("../img/icons/icon-leaf.svg");
+  }
+}
+
+.explanation__description--glass {
+  &::before {
+    background-image: url("../img/icons/icon-glass.svg");
+  }
+}
+
+.explanation__description--cutlery {
+  &::before {
+    background-image: url("../img/icons/icon-cutlery.svg");
+  }
+}
+
+.explanation__description--clock {
+  &::before {
+    background-image: url("../img/icons/icon-clock.svg");
+  }
+}

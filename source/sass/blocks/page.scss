@@ -1,0 +1,18 @@
+@import "../variables";
+
+.page {
+  height: 100%;
+
+  font-family: $ff-content;
+  font-weight: $fw-normal;
+  font-size: $fz-text-content;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  margin: 0;
+
+  background-color: $bgc-page-light;
+}

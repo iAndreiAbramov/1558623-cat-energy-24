@@ -1,0 +1,52 @@
+.main-nav {
+  display: block;
+}
+
+.main-nav__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.main-nav__dash {
+  display: block;
+  width: 24px;
+  height: 2px;
+
+  background-color: #000000;
+  transition: all 0.3s linear;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.main-nav__dash--rotated-plus {
+  transform: translateY(200%) rotate(225deg);
+
+  margin-bottom: 0;
+}
+
+.main-nav__dash--rotated-minus {
+  transform: translateY(-200%) rotate(-225deg);
+
+  margin-bottom: 0;
+}
+
+.main-nav__list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+
+  display: none;
+  width: 100%;
+}
+
+.main-nav__list--active {
+  display: block;
+}

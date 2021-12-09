@@ -1,0 +1,84 @@
+@import "../variables";
+
+.promo {
+  display: grid;
+  grid-template-rows: 137px 29px 137px 137px 40px;
+}
+
+.promo__text-wrapper {
+  position: relative;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  z-index: -2;
+
+  width: 100vw;
+
+  text-align: center;
+
+  background-image: url("../img/background/promo-background-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    content: "";
+    background-color: $bgc-mask;
+  }
+}
+
+.promo__title {
+  margin: 27px auto 0;
+
+  font-size: 36px;
+  line-height: 1;
+  color: $fc-light;
+}
+
+.promo__action-call {
+  display: block;
+  margin-top: 25px;
+
+  font-family: $ff-title;
+  color: $fc-light;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.promo__img-wrapper {
+  grid-row: 3 / 5;
+  grid-column: 1 / 2;
+  justify-self: center;
+
+  width: 280px;
+}
+
+.promo__choose {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+  justify-self: center;
+  width: 280px;
+}
+
+.promo__link {
+  display: block;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: $ff-title;
+  color: $fc-light;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $bgc-button-icon;
+}

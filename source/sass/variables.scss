@@ -1,0 +1,42 @@
+//Borders
+$border-main-row: 1px solid #cdcdcd;
+$border-footer-row: 1px solid #d9d9d9;
+$border-input: 1px solid #e7e7e7;
+
+//Breakpoints
+$min-mobile: 320px;
+$min-tablet: 768px;
+$min-desktop: 1440px;
+
+//Font families
+$ff-title: "Oswald", "Arial", sans-serif;
+$ff-content: "Arial", sans-serif;
+
+//Font sizes
+$fz-text-content: 14px;
+
+//Font weights
+$fw-normal: 400;
+$fw-medium: 500;
+
+//Background colors
+$bgc-page-light: #ffffff;
+$bgc-page-grey: #f2f2f2;
+$bgc-button-icon: #68b738;
+$bgc-button-shadowed: #f2f2f2;
+$bgc-mask: rgba(104, 183, 56, 0.85);
+
+//Font colors
+$fc-title-dark: #000000;
+$fc-title-dark-hover: rgba($fc-title-dark, 0.6);
+$fc-title-dark-menu-down: rgba($fc-title-dark, 0.3);
+$fc-title-dark-checkbox-disabled: rgba($fc-title-dark, 0.3);
+
+$fc-content-dark: #444444;
+
+$fc-grey: #f2f2f2;
+$fc-grey-button-pressed: rgba($fc-grey, 0.3);
+
+$fc-light: #ffffff;
+$fc-light-hover: rgba($fc-light, 0.6);
+$fc-light-menu-down: rgba($fc-light, 0.3);
