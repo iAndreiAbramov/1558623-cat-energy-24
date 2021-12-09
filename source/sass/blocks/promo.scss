@@ -20,6 +20,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+
   &::after {
     position: absolute;
     top: 0;
@@ -30,6 +34,10 @@
 
     content: "";
     background-color: $bgc-mask;
+
+    @media (min-width: $min-tablet) {
+      display: none;
+    }
   }
 }
 

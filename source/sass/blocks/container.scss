@@ -1,4 +1,16 @@
+@import "../global/variables";
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $min-tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

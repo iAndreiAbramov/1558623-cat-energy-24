@@ -1,3 +1,5 @@
+@import "../global/variables";
+
 .main-nav {
   display: block;
 }
@@ -10,6 +12,10 @@
 
   background: none;
   border: none;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
 }
 
 .main-nav__dash {
@@ -45,6 +51,13 @@
 
   display: none;
   width: 100%;
+
+  @media (min-width: $min-tablet) {
+    position: static;
+    transform: none;
+
+    display: flex;
+  }
 }
 
 .main-nav__list--active {

@@ -1,15 +1,27 @@
 @import "../global/variables";
 
 .page-main {
-  min-width: 320px;
+  min-width: $min-mobile;
+
+  @media (min-width: $min-tablet) {
+    min-width: $min-tablet;
+  }
 }
 
 .page-main__section {
   margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .page-main__section.page-main__section--explanation {
   margin-bottom: 49px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 43px;
+  }
 }
 
 .page-main__section.page-main__section--extra-goods {

@@ -12,7 +12,6 @@
 }
 
 .page-header__logo {
-  display: block;
   width: 34px;
   height: 38px;
 
@@ -20,12 +19,13 @@
 }
 
 .page-header__logo-text {
-  display: block;
+  margin-left: 13px;
   width: 101px;
   height: 18px;
 }
 
-//todo: Проверить, возможно лишний класс
-//.page-header__nav {
-//
-//}
+.page-header__nav {
+  @media (min-width: $min-tablet) {
+    margin-left: auto;
+  }
+}
