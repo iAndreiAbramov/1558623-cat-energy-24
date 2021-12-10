@@ -1,0 +1,16 @@
+@import "../global/variables";
+
+.header-promo-wrapper {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-bottom: 82px;
+    min-height: 694px;
+  }
+}

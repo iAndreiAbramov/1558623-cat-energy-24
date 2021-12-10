@@ -9,6 +9,10 @@
   list-style: none;
 
   background-color: $bgc-page-light;
+
+  @media (min-width: $min-desktop) {
+    background-color: transparent;
+  }
 }
 
 .nav-list__item {
@@ -17,17 +21,19 @@
   padding-bottom: 23px;
 
   font-family: $ff-title;
+  color: $fc-title-dark;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: $fc-title-dark;
 
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $min-tablet) {
+    border: none;
+
     &:not(:first-child) {
       margin-left: 35px;
     }
