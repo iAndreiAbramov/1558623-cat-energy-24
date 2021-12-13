@@ -11,6 +11,14 @@
   color: $fc-title-dark;
   font-size: 36px;
   line-height: 1.11;
+
+  @media (min-width: $min-tablet) {
+    margin: 0;
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .explanation__list {
@@ -21,27 +29,54 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 77px;
+    grid-column-gap: 58px;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 227px;
+    grid-column-gap: 80px;
+  }
 }
 
 .explanation__item {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  @media (min-width: $min-tablet) {
+    position: relative;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 80px 147px;
+
+    min-height: 287px;
+  }
 }
 
-.explanation__item--one {
-  background: none;
-}
+.explanation__item-digit {
+  display: none;
 
-.explanation__item--two {
-  background: none;
-}
+  @media (min-width: $min-tablet) {
+    position: absolute;
+    top: -13%;
+    right: 25%;
+    z-index: -1;
 
-.explanation__item--three {
-  background: none;
-}
+    display: block;
 
-.explanation__item--four {
-  background: none;
+    font-family: $ff-title;
+    font-weight: $fw-normal;
+    color: $fc-grey;
+    font-size: 280px;
+    line-height: 1;
+    text-align: right;
+  }
+
+  @media (min-width: $min-desktop) {
+    right: 0;
+  }
 }
 
 .explanation__description {
@@ -54,14 +89,23 @@
 
   font-family: $ff-content;
   font-weight: $fw-normal;
+  color: $fc-content-dark;
   font-size: 14px;
   line-height: 1.29;
 
-  color: $fc-content-dark;
+  @media (min-width: $min-tablet) {
+    display: block;
+    max-width: 75%;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $min-desktop) {
+    max-width: 100%;
+  }
 
   &::before {
-    grid-column: 1 / 2;
-
     display: inline-flex;
     flex-shrink: 0;
     margin-right: 20px;
@@ -71,6 +115,20 @@
     content: "";
     background-position: center center;
     background-size: cover;
+
+    @media (min-width: $min-tablet) {
+      display: block;
+      margin: 0 0 31px;
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $min-desktop) {
+      display: block;
+      margin: 0 0 31px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
