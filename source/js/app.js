@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dashes = document.querySelectorAll('.main-nav__dash');
   const [topDash, middleDash, bottomDash] = dashes;
 
+  //Menu open & close
   menuButton.addEventListener('click', () => {
     menu.classList.toggle('main-nav__list--active');
     topDash.classList.toggle('main-nav__dash--rotated-plus');

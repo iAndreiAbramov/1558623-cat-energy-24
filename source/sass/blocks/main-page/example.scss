@@ -7,11 +7,17 @@
 
   background-color: $bgc-page-grey;
 
+  @media (min-width: $min-tablet) {
+    background: linear-gradient($bgc-page-light 0, $bgc-page-light 50%, $bgc-page-grey 50%, $bgc-page-grey 100%);
+  }
+
   @media (min-width: $min-desktop) {
     display: grid;
     grid-template-rows: 179px auto 150px;
     grid-template-columns: 1fr 1fr;
     column-gap: 66px;
+
+    background: linear-gradient($bgc-page-light 0, $bgc-page-light 23%, $bgc-page-grey 23%, $bgc-page-grey 77%);
   }
 }
 

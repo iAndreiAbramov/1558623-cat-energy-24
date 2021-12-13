@@ -1,0 +1,9 @@
+@import "../../global/variables";
+
+.contacts-wrapper {
+  display: block;
+
+  @media (min-width: $min-desktop) {
+    position: relative;
+  }
+}

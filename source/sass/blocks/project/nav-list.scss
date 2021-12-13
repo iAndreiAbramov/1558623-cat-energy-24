@@ -38,8 +38,13 @@
       margin-left: 35px;
     }
   }
+
+  @media (min-width: $min-desktop) {
+    color: $fc-light;
+  }
 }
 
 .nav-list__link {
   text-decoration: none;
+  color: inherit;
 }
